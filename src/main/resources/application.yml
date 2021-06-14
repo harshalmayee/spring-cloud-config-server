@@ -1,18 +1,5 @@
 server:
-    port: 8888
-# Commented as we will be fetch global properties from git
-#spring:
-#    cloud:
-#        config:
-#            server:
-#                native:
-#                    search-locations: classpath:/common-config
-#
-#    profiles:
-#        active: native
-
-
-
+    port: 9196
 
 spring:
     cloud:
@@ -20,9 +7,9 @@ spring:
             server:
                 git:
                     uri: https://github.com/harshalmayee/spring-cloud-config-git-server
-    boot:
-        admin:
-            client:
-                url: http://localhost:8093
+#    boot:
+#        admin:
+#            client:
+#                url: http://localhost:8093
     application:
-        name: Spring-Config-Server
+        name: CONFIG-SERVER
